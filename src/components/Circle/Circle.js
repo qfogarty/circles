@@ -1,8 +1,8 @@
 import React from 'react';
-import Ring from '../../components/Ring/Ring';
+import Ring from '../Ring/Ring';
 
-import CircleName from '../../components/CircleName/CircleName';
-import Segments from '../../components/Segments/Segments';
+import CircleName from '../CircleName/CircleName';
+import Segments from '../Segments/Segments';
 
 import { ReactComponent as Magnifier } from '../../assets/svg/magnifier.svg';
 import { ReactComponent as Arrow } from '../../assets/svg/arrow.svg';

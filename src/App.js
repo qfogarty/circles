@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './styles.scss';
-import Circle from './containers/Circle/Circle';
+import Circle from './components/Circle/Circle';
 import Form from './components/Form/Form';
 
 function App() {
