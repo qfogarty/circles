@@ -15,7 +15,7 @@ const Segments = (props) => {
 
     return totalSegments > 0 && (
         <>
-            {Array.from(new Array(totalSegments), (val, index) => {
+            {Array.from(new Array(parseInt(totalSegments)), (val, index) => {
 
                 const rotation = Math.floor(index * segmentDegrees);
 
@@ -33,4 +33,4 @@ const Segments = (props) => {
     );
 };
 
-export default Segments;
+export default React.memo(Segments);
