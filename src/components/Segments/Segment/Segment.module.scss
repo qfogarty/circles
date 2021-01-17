@@ -1,0 +1,68 @@
+@import '../../../scss/settings';
+
+.Segment {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+
+    & > div {
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: 50%;
+        border: 1em solid $color--white;
+        margin: 6px;
+        //background-color: $color--white;
+    }
+
+}
+
+.Lit {
+    & > div {
+        border-color: $color--white;
+        opacity: 0.55;
+    }
+}
+
+.Unlit {
+    & > div {
+        border-color: $color--black;
+        opacity: 0.2;
+    }
+}
+
+.Broken {
+
+    & > div {
+        border-color: $color--red;
+    }
+
+    & span {
+        display: block;
+        width: 220px;
+        height: 220px;
+    }
+
+    & .icon {
+        background-color: $color--red;
+        border-radius: 50%;
+        position: absolute;
+        //top: 50%;
+        left: 67%;
+        transform: translateX(-50%);
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        text-align: center;
+        color: $color--white;
+        margin-top: 12px;
+        z-index: 2;
+
+    }
+}
+
+

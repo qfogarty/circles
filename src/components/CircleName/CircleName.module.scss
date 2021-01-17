@@ -1,0 +1,17 @@
+@import "./src/scss/settings";
+
+.CircleName {
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: $color--white;
+    white-space: nowrap;
+    font-size: 18px;
+}
+
+.CircleChar {
+    //width: 10px;
+    position: absolute;
+}

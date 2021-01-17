@@ -1,0 +1,38 @@
+@import '../../scss/settings';
+
+.Ring {
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.20);
+    border: 30px solid rgba($color--silver, 0.5);
+    box-sizing: border-box;
+
+    &::before {
+        content: '';
+        box-sizing: content-box;
+        border: 1px solid rgba($color--white, 0.8);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        border-radius: 50%;
+        z-index: -1;
+        margin: -1px
+
+    }
+
+    &::after {
+        content: '';
+        box-sizing: content-box;
+        border: 1px solid rgba($color--white, 0.8);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        border-radius: 50%;
+        z-index: -1;
+        margin: 29px
+
+    }
+}
