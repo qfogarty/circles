@@ -1,0 +1,58 @@
+@import '../../scss/settings';
+
+$radius: calc(100% - 70px);
+$gap: 2.5px;
+
+.CircleButton::before {
+    content: '';
+    width: $radius;
+    height: $radius;
+    box-sizing: border-box;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 50px solid rgba($color--white, 0.25);
+}
+
+.CircleTop::before {
+    clip-path: inset(0% 0% calc(50% + #{$gap}) 0%);
+}
+
+.CircleTopLeft::before {
+    clip-path: inset(0% calc(50% + #{$gap}) calc(50% + #{$gap}) 0%);
+}
+
+.CircleTopRight::before {
+    clip-path: inset(0% 0% calc(50% + #{$gap}) calc(50% + #{$gap}));
+}
+
+.CircleBottom::before {
+    clip-path: inset(calc(50% + #{$gap}) 0% 0% 0%);
+}
+
+.CircleBottomLeft {
+    &::before {
+        clip-path: inset(calc(50% + #{$gap}) calc(50% + #{$gap}) 0% 0%);
+    }
+
+    & > * {
+        position: absolute;
+        bottom: calc(110% / 4);
+        left: calc(110% / 4);
+    }
+}
+
+.CircleBottomRight {
+    &::before {
+        clip-path: inset(calc(50% + #{$gap}) 0% 0% calc(50% + #{$gap}));
+    }
+
+    & > * {
+        position: absolute;
+        bottom: calc(110% / 4);
+        right: calc(110% / 4);
+    }
+}
+
