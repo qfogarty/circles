@@ -30,11 +30,11 @@ const Segment = (props) => {
             }}
         >
 
-            {/*{status === 'broken' && (*/}
-            {/*    <span style={{ zIndex: 1, transform: 'rotate(' + rotation + 'deg)' }}>*/}
-            {/*        <span className={classes.icon}>X</span>*/}
-            {/*    </span>*/}
-            {/*)}*/}
+            {status === 'broken' && (
+                <span style={{ zIndex: 1, transform: 'rotate(' + rotation + 'deg)' }}>
+                    <span className={classes.icon}>X</span>
+                </span>
+            )}
 
             <div
                 style={{
